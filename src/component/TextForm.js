@@ -12,9 +12,7 @@ export default function TextForm(props) {
       props.showAlert("Converted to lowercase", "success");
     }
     const copyText = () =>{
-      let newText = document.getElementById("textBox");
-      newText.select();
-      navigator.clipboard.writeText(newText.value);
+      navigator.clipboard.writeText(text);
       props.showAlert("Copied to clipboard", "success");
     }
     const clearText = () =>{
