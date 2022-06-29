@@ -1,10 +1,10 @@
 import React from "react";
 
-export default function () {
+export default function (props) {
   return (
-    <div classNameName="container">
+    <div classNameName="container" style={{color : props.mode === 'dark' ? 'white' : '#042743'}}>
       <h2>About Us</h2>
-      <div classNameName="accordion" id="accordionExample">
+      <div classNameName="accordion" id="accordionExample" >
         <div classNameName="accordion-item">
           <h2 classNameName="accordion-header" id="headingOne">
             <button
@@ -24,7 +24,7 @@ export default function () {
             aria-labelledby="headingOne"
             data-bs-parent="#accordionExample"
           >
-            <div className="accordion-body">
+            <div className="accordion-body" style={{color : props.mode === 'dark' ? 'white' : '#042743'}}>
               <strong>This is the first item's accordion body.</strong> It is
               shown by default, until the collapse plugin adds the appropriate
               classNamees that we use to style each element. These classNamees
@@ -55,7 +55,7 @@ export default function () {
             aria-labelledby="headingTwo"
             data-bs-parent="#accordionExample"
           >
-            <div className="accordion-body">
+            <div className="accordion-body" style={{color : props.mode === 'dark' ? 'white' : '#042743'}}>
               <strong>This is the second item's accordion body.</strong> It is
               hidden by default, until the collapse plugin adds the appropriate
               classNamees that we use to style each element. These classNamees
@@ -86,7 +86,7 @@ export default function () {
             aria-labelledby="headingThree"
             data-bs-parent="#accordionExample"
           >
-            <div className="accordion-body">
+            <div className="accordion-body" style={{color : props.mode === 'dark' ? 'white' : '#042743'}}>
               <strong>This is the third item's accordion body.</strong> It is
               hidden by default, until the collapse plugin adds the appropriate
               classNamees that we use to style each element. These classNamees
